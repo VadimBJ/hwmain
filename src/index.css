@@ -5,9 +5,57 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  margin: 0 0 50px;
+  font-size: 3rem;
+  color: antiquewhite;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+button {
+  width: 150px;
+  font-size: 1.5rem;
+  margin: 5px;
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+button:hover{
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  background-color: rgb(197, 177, 151);
+}
+
+.inputContainer{
+  margin-top: 10px;
+}
+input{
+  width: 350px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+p{
+  font-size: 2rem;
+  color: azure;
+}
+
+#clear{
+  background-color: transparent;
+  height: 40px;
+  color: azure;
+  cursor: pointer;
+  border: 1px solid azure;
+  border-radius: 25px;
+}
+#clear:hover{
+  background-color: rgb(220, 232, 232, 0.3);
+  
 }
