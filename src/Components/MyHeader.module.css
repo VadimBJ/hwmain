@@ -1,0 +1,31 @@
+.header {
+  margin: 0;
+  display: flex;
+  background-color: rgb(40, 42, 41);
+  width: 100%;
+  background-image: url(../img/bgHeader.jpg);
+  background-size: cover; /* Масштабирование изображения, чтобы оно полностью заполнило фоновую область div */
+  background-repeat: no-repeat; /* Отключение повторения изображения */
+}
+
+.navLink {
+  text-align: center;
+  font-size: 2rem;
+  background-color: rgb(66, 63, 63);
+  border: 1px solid white;
+  color: antiquewhite;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0px 10px 5px;
+  margin: 10px 5px;
+}
+
+.navLink:hover{
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  background-color: rgb(197, 177, 151);
+}
+
+.line{
+  margin-top: 3px;
+  box-shadow: 1px 2px 3px rgba(255, 255, 255, 0.5);
+}

@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import './sandwich.css';
 
 export default function Sandwich(): JSX.Element {
   const [text, setText] = useState('Твой бутерброд: |');
@@ -13,6 +14,7 @@ export default function Sandwich(): JSX.Element {
 
   return (
     <div>
+      <h1>Создай свой уникальный бутерброд</h1>
       <div className="buttons">
       <button type="button" onClick={() => addIngredient('Хлеб')}>Хлеб</button>
       <button type="button" onClick={() => addIngredient('Масло')}>Масло</button>
@@ -24,7 +26,7 @@ export default function Sandwich(): JSX.Element {
         <button type="button" onClick={() => addIngredient(inputRef.current.value)}>Добавить</button>
       </div>
       <div className="textContainer">
-        <p>{text}</p>
+        <p className='textCon'>{text}</p>
       </div>
       <button type="button" id="clear" onClick={() => setText('Твой бутерброд: |')}>Очистить</button>
     </div>

@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import Sandwich from './Components/sandwich';
+import MyHeader from './Components/MyHeader';
+// import MyModal from './Components/MyModal';
 
 function App(): JSX.Element {
   return (
     <div className="App">
-      <h1>Создай свой уникальный бутерброд</h1>
-      <Sandwich />
+    <MyHeader />
+    {/* <MyModal /> */}
     </div>
   );
 }
