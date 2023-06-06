@@ -12,14 +12,14 @@ export default function MyHeader(): JSX.Element {
   return (
     <Router>
     <div className={styles.header}>
-      <NavLink className={styles.navLink} to="/">Main</NavLink>
+      <NavLink className={styles.navLink} to="/main">Main</NavLink>
       <NavLink className={styles.navLink} to="/sandwich">Sandwich</NavLink>
       <button type="button" className={styles.navLink} onClick={() => setModalActive(true)}>Fetch</button>
     </div>
     <hr className={styles.line} />
     {modalActive && <MyModal setActive={setModalActive} />}
     <Routes>
-      <Route path="/" element={<Main />} />
+      <Route path="/main" element={<Main />} />
       <Route path="/sandwich" element={<Sandwich />} />
     </Routes>
     </Router>
