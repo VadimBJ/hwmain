@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import {
+  BrowserRouter as Router, Routes, Route, NavLink
+} from 'react-router-dom';
 import styles from './MyHeader.module.css';
 import Sandwich from './sandwich';
 import Main from '../main';
@@ -15,7 +17,7 @@ export default function MyHeader(): JSX.Element {
       <button type="button" className={styles.navLink} onClick={() => setModalActive(true)}>Fetch</button>
     </div>
     <hr className={styles.line} />
-    {modalActive && <MyModal active={modalActive} setActive={setModalActive} />}
+    {modalActive && <MyModal setActive={setModalActive} />}
     <Routes>
       <Route path="/" element={<Main />} />
       <Route path="/sandwich" element={<Sandwich />} />

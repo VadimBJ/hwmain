@@ -26,7 +26,7 @@ export default function Sandwich(): JSX.Element {
         <button type="button" onClick={() => addIngredient(inputRef.current.value)}>Добавить</button>
       </div>
       <div className="textContainer">
-        <p className='textCon'>{text}</p>
+        <p className="textCon">{text}</p>
       </div>
       <button type="button" id="clear" onClick={() => setText('Твой бутерброд: |')}>Очистить</button>
     </div>
