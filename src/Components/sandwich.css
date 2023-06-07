@@ -6,7 +6,7 @@ body {
 }
 
 h1{
-  margin: 70px 0 50px;
+  margin: 40px 0 50px;
   font-size: 3rem;
   color: antiquewhite;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
@@ -50,7 +50,7 @@ input{
   cursor: pointer;
   border: 1px solid azure;
   border-radius: 25px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 #clear:hover{
   background-color: rgb(220, 232, 232, 0.3);

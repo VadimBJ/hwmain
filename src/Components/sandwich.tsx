@@ -3,7 +3,7 @@ import './sandwich.css';
 
 export default function Sandwich(): JSX.Element {
   const [text, setText] = useState('Твой бутерброд: |');
-  const inputRef:any = useRef();
+  const inputRef:any = useRef(null);
 
   function addIngredient(ingredient: string): void {
     if (ingredient.trim()) {

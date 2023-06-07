@@ -6,7 +6,7 @@ export default function MyProducts():JSX.Element {
 
   useEffect(() => {
     async function getData():Promise<any> {
-      const resp = await fetch('https://fakestoreapi.com/products?limit=10');
+      const resp = await fetch('https://fakestoreapi.com/products?limit=12');
       const arr = await resp.json();
       setProducts(arr);
     }
