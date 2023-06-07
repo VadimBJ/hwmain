@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Sandwich/static/css/main.d13771f0.css",
+    "main.js": "/Sandwich/static/js/main.e56762e3.js",
+    "static/media/bg.jpg": "/Sandwich/static/media/bg.38fd685cb60c21f33553.jpg",
+    "static/media/bgMain.jpg": "/Sandwich/static/media/bgMain.584429c31fe3fc6a2bea.jpg",
+    "static/media/bgHeader.jpg": "/Sandwich/static/media/bgHeader.d2607170ed7eb28375e5.jpg",
+    "index.html": "/Sandwich/index.html",
+    "main.d13771f0.css.map": "/Sandwich/static/css/main.d13771f0.css.map",
+    "main.e56762e3.js.map": "/Sandwich/static/js/main.e56762e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d13771f0.css",
+    "static/js/main.e56762e3.js"
+  ]
+}
