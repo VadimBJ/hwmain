@@ -20,8 +20,9 @@ export default function MyHeader(): JSX.Element {
     <hr className={styles.line} />
     {modalActive && <MyModal setActive={setModalActive} component={<MyProducts />} />}
     <Routes>
-      <Route path="/hwmain" element={<Main />} />
+      <Route path="/" element={<Main />} />
       <Route path="/sandwich" element={<Sandwich />} />
+      <Route path="/hwmain" element={<Main />} />
     </Routes>
     </Router>
   );
