@@ -1,15 +1,23 @@
 import React, { useRef, useState } from 'react';
 import './sandwich.css';
+import SandvichImg from './SandvichImg';
 
 export default function Sandwich(): JSX.Element {
   const [text, setText] = useState('Твой бутерброд: |');
+  const [sandwichImg, setSandwichImg] = useState<string[]>([]);
   const inputRef:any = useRef(null);
 
   function addIngredient(ingredient: string): void {
     if (ingredient.trim()) {
       const txt = ` ${ingredient.trim()} |`;
       setText(text + txt);
+      sandwichImg.push(ingredient.trim());
     }
+  }
+
+  function clear():void {
+    setText('Твой бутерброд: |');
+    setSandwichImg([]);
   }
 
   return (
@@ -17,7 +25,7 @@ export default function Sandwich(): JSX.Element {
       <h1>Создай свой уникальный бутерброд</h1>
       <div className="buttons">
       <button type="button" onClick={() => addIngredient('Хлеб')}>Хлеб</button>
-      <button type="button" onClick={() => addIngredient('Масло')}>Масло</button>
+      <button type="button" onClick={() => addIngredient('Зелень')}>Зелень</button>
       <button type="button" onClick={() => addIngredient('Сыр')}>Сыр</button>
       <button type="button" onClick={() => addIngredient('Колбаса')}>Колбаса</button>
       </div>
@@ -28,7 +36,8 @@ export default function Sandwich(): JSX.Element {
       <div className="textContainer">
         <p className="textCon">{text}</p>
       </div>
-      <button type="button" id="clear" onClick={() => setText('Твой бутерброд: |')}>Очистить</button>
+      <button type="button" id="clear" onClick={clear}>Очистить</button>
+      <SandvichImg ingredient={sandwichImg} />
     </div>
   );
 }
