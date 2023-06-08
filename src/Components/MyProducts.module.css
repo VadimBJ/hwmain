@@ -2,7 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   overflow-y: auto;
-  max-height: 800px;
+  max-width: calc(80vw - 50px);
+  max-height: calc(80vh - 50px); 
+  /* max-height: 800px; */
 }
 
 .product{
