@@ -1,10 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState } from 'react';
 
 export default function Lesson18(): JSX.Element {
-  const [gender, setGender] = useState<string>("");
+  const [gender, setGender] = useState<string>('');
   const inputName: any = useRef();
 
-  function getGender() {
+  function getGender():void {
     async function loadGender(): Promise<void> {
       const firstName = inputName.current.value;
       const response = await fetch(
@@ -22,7 +22,7 @@ export default function Lesson18(): JSX.Element {
       <button type="button" onClick={getGender}>
         Отправить
       </button>
-      <div style={{color: 'white'}}>{gender}</div>
+      <div style={{ color: 'white' }}>{gender}</div>
     </div>
   );
 }
