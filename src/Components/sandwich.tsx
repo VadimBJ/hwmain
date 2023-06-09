@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './sandwich.css';
 import SandvichImg from './SandvichImg';
+import bground from '../img/bg.jpg';
 
 export default function Sandwich(): JSX.Element {
   const [text, setText] = useState('Твой бутерброд: |');
@@ -22,6 +23,7 @@ export default function Sandwich(): JSX.Element {
 
   return (
     <div>
+      <img src={bground} alt="bgroud" className="mainImg" />
       <h1>Создай свой уникальный бутерброд</h1>
       <div className="buttons">
       <button type="button" onClick={() => addIngredient('Хлеб')}>Хлеб</button>

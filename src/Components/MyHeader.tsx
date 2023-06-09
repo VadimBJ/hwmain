@@ -7,6 +7,8 @@ import Sandwich from './sandwich';
 import Main from '../main';
 import MyModal from './MyModal';
 import MyProducts from './MyProducts';
+import Users from './Users';
+import UserPage from './UserPage';
 
 export default function MyHeader(): JSX.Element {
   const [modalActive, setModalActive] = useState(false);
@@ -16,6 +18,7 @@ export default function MyHeader(): JSX.Element {
       <NavLink className={styles.navLink} to="/hwmain">Main</NavLink>
       <NavLink className={styles.navLink} to="/sandwich">Sandwich</NavLink>
       <button type="button" className={styles.navLink} onClick={() => setModalActive(true)}>Fetch</button>
+      <NavLink className={styles.navLink} to="/users">Users</NavLink>
     </div>
     <hr className={styles.line} />
     {modalActive && <MyModal setActive={setModalActive} component={<MyProducts />} />}
@@ -23,6 +26,9 @@ export default function MyHeader(): JSX.Element {
       <Route path="/" element={<Main />} />
       <Route path="/sandwich" element={<Sandwich />} />
       <Route path="/hwmain" element={<Main />} />
+      <Route path="/users" element={<Users />}>
+        <Route path=":userId" element={<UserPage />} />
+      </Route>
     </Routes>
     </Router>
   );
