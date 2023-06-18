@@ -9,6 +9,7 @@ import MyModal from './MyModal';
 import MyProducts from './MyProducts';
 import Users from './Users';
 import UserPage from './UserPage';
+import MainPage from './mainPage/mainPage';
 
 export default function MyHeader(): JSX.Element {
   const [modalActive, setModalActive] = useState(false);
@@ -25,7 +26,7 @@ export default function MyHeader(): JSX.Element {
     <Routes>
       <Route path="/" element={<Main />} />
       <Route path="/sandwich" element={<Sandwich />} />
-      <Route path="/hwmain" element={<Main />} />
+      <Route path="/hwmain" element={<MainPage />} />
       <Route path="/users" element={<Users />}>
         <Route path=":userId" element={<UserPage />} />
       </Route>
