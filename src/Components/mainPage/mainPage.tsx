@@ -21,7 +21,7 @@ export default function MainPage(): JSX.Element {
           <div className="layers__item layer-3">
             <div className="hero-content">
               <div className="hero-content__p">
-                ... made for my home work presentation
+                ... created for my homework presentations
               </div>
             </div>
           </div>
