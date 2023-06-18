@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/hwmain/static/css/main.bebcfbeb.css",
-    "main.js": "/hwmain/static/js/main.4e2ea6ab.js",
+    "main.css": "/hwmain/static/css/main.53cb0b9d.css",
+    "main.js": "/hwmain/static/js/main.4fc9ba53.js",
     "static/media/bg.jpg": "/hwmain/static/media/bg.38fd685cb60c21f33553.jpg",
     "static/media/bgMain.jpg": "/hwmain/static/media/bgMain.584429c31fe3fc6a2bea.jpg",
     "static/media/bgHeader.jpg": "/hwmain/static/media/bgHeader.d2607170ed7eb28375e5.jpg",
+    "static/media/layer-2.png": "/hwmain/static/media/layer-2.9ca0471e7c9efc1f8d27.png",
+    "static/media/layer-1.jpg": "/hwmain/static/media/layer-1.246285c27090fae95e32.jpg",
+    "static/media/layer-6.png": "/hwmain/static/media/layer-6.35edcb87611e547f6ec4.png",
     "static/media/salad.png": "/hwmain/static/media/salad.61fff9a03a96df1af53c.png",
     "static/media/sausage.png": "/hwmain/static/media/sausage.2820b7908cdffa8fb919.png",
     "static/media/bread.png": "/hwmain/static/media/bread.d98a2eb60ffc1a378117.png",
     "static/media/cheese.png": "/hwmain/static/media/cheese.a3bec5f17b42d3a2cbd1.png",
+    "static/media/layer-5.png": "/hwmain/static/media/layer-5.eac74c2031bd310a7782.png",
+    "static/media/merriweather-regular-italic.woff2": "/hwmain/static/media/merriweather-regular-italic.a1cfdc5b5250b7c4b481.woff2",
+    "static/media/kamerik205-heavy.woff2": "/hwmain/static/media/kamerik205-heavy.70dae64327fe4c4ee43d.woff2",
     "index.html": "/hwmain/index.html",
-    "main.bebcfbeb.css.map": "/hwmain/static/css/main.bebcfbeb.css.map",
-    "main.4e2ea6ab.js.map": "/hwmain/static/js/main.4e2ea6ab.js.map"
+    "main.53cb0b9d.css.map": "/hwmain/static/css/main.53cb0b9d.css.map",
+    "main.4fc9ba53.js.map": "/hwmain/static/js/main.4fc9ba53.js.map"
   },
   "entrypoints": [
-    "static/css/main.bebcfbeb.css",
-    "static/js/main.4e2ea6ab.js"
+    "static/css/main.53cb0b9d.css",
+    "static/js/main.4fc9ba53.js"
   ]
 }
