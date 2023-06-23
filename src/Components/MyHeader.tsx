@@ -10,6 +10,7 @@ import MyProducts from './MyProducts';
 import Users from './Users';
 import UserPage from './UserPage';
 import MainPage from './mainPage/mainPage';
+import ToDo from './todoToolkit/ToDo';
 
 export default function MyHeader(): JSX.Element {
   const [modalActive, setModalActive] = useState(false);
@@ -20,6 +21,7 @@ export default function MyHeader(): JSX.Element {
       <NavLink className={styles.navLink} to="/sandwich">Sandwich</NavLink>
       <button type="button" className={styles.navLink} onClick={() => setModalActive(true)}>Fetch</button>
       <NavLink className={styles.navLink} to="/users">Users</NavLink>
+      <NavLink className={styles.navLink} to="/todo">ToDo List</NavLink>
     </div>
     <hr className={styles.line} />
     {modalActive && <MyModal setActive={setModalActive} component={<MyProducts />} />}
@@ -30,6 +32,7 @@ export default function MyHeader(): JSX.Element {
       <Route path="/users" element={<Users />}>
         <Route path=":userId" element={<UserPage />} />
       </Route>
+      <Route path="/todo" element={<ToDo />} />
     </Routes>
     </Router>
   );

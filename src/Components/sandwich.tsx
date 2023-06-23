@@ -24,16 +24,16 @@ export default function Sandwich(): JSX.Element {
   return (
     <div>
       <img src={bground} alt="bgroud" className="mainImg" />
-      <h1>Создай свой уникальный бутерброд</h1>
+      <h1 className="sandwichH1">Создай свой уникальный бутерброд</h1>
       <div className="buttons">
-      <button type="button" onClick={() => addIngredient('Хлеб')}>Хлеб</button>
-      <button type="button" onClick={() => addIngredient('Зелень')}>Зелень</button>
-      <button type="button" onClick={() => addIngredient('Сыр')}>Сыр</button>
-      <button type="button" onClick={() => addIngredient('Колбаса')}>Колбаса</button>
+      <button className="sandBtn" type="button" onClick={() => addIngredient('Хлеб')}>Хлеб</button>
+      <button className="sandBtn" type="button" onClick={() => addIngredient('Зелень')}>Зелень</button>
+      <button className="sandBtn" type="button" onClick={() => addIngredient('Сыр')}>Сыр</button>
+      <button className="sandBtn" type="button" onClick={() => addIngredient('Колбаса')}>Колбаса</button>
       </div>
       <div className="inputContainer">
-        <input ref={inputRef} type="text" placeholder="Добавь все что пожелаешь" />
-        <button type="button" onClick={() => addIngredient(inputRef.current.value)}>Добавить</button>
+        <input ref={inputRef} className="sandInp" type="text" placeholder="Добавь все что пожелаешь" />
+        <button className="sandBtn" type="button" onClick={() => addIngredient(inputRef.current.value)}>Добавить</button>
       </div>
       <div className="textContainer">
         <p className="textCon">{text}</p>
