@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/hwmain/static/css/main.9888c5df.css",
-    "main.js": "/hwmain/static/js/main.3c26969f.js",
+    "main.css": "/hwmain/static/css/main.0a717f72.css",
+    "main.js": "/hwmain/static/js/main.d452fc80.js",
     "static/media/bg.jpg": "/hwmain/static/media/bg.38fd685cb60c21f33553.jpg",
     "static/media/bgMain.jpg": "/hwmain/static/media/bgMain.584429c31fe3fc6a2bea.jpg",
     "static/media/bgHeader.jpg": "/hwmain/static/media/bgHeader.d2607170ed7eb28375e5.jpg",
     "static/media/layer-2.png": "/hwmain/static/media/layer-2.9ca0471e7c9efc1f8d27.png",
+    "static/media/fon.jpg": "/hwmain/static/media/fon.1f9105b0d1e07e52c589.jpg",
     "static/media/layer-1.jpg": "/hwmain/static/media/layer-1.246285c27090fae95e32.jpg",
     "static/media/layer-6.png": "/hwmain/static/media/layer-6.35edcb87611e547f6ec4.png",
     "static/media/salad.png": "/hwmain/static/media/salad.61fff9a03a96df1af53c.png",
@@ -16,11 +17,11 @@
     "static/media/merriweather-regular-italic.woff2": "/hwmain/static/media/merriweather-regular-italic.a1cfdc5b5250b7c4b481.woff2",
     "static/media/kamerik205-heavy.woff2": "/hwmain/static/media/kamerik205-heavy.70dae64327fe4c4ee43d.woff2",
     "index.html": "/hwmain/index.html",
-    "main.9888c5df.css.map": "/hwmain/static/css/main.9888c5df.css.map",
-    "main.3c26969f.js.map": "/hwmain/static/js/main.3c26969f.js.map"
+    "main.0a717f72.css.map": "/hwmain/static/css/main.0a717f72.css.map",
+    "main.d452fc80.js.map": "/hwmain/static/js/main.d452fc80.js.map"
   },
   "entrypoints": [
-    "static/css/main.9888c5df.css",
-    "static/js/main.3c26969f.js"
+    "static/css/main.0a717f72.css",
+    "static/js/main.d452fc80.js"
   ]
 }
